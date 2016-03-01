@@ -6,9 +6,8 @@
 	
 	<link rel="stylesheet" href="<?php echo asset('css/menu.css')?>" type="text/css"> 
 	<link rel="stylesheet" href="<?php echo asset('css/font/menu.css')?>" type="text/css"> 
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="<?php echo asset('js/jQuery.js')?>"></script>
 	<script src="<?php echo asset('js/menu.js')?>"></script>  
-
 <body>
 <div>
 	<header>
@@ -16,7 +15,7 @@
 			<a href="#" class="bt-menu"><span class="icon-home"></span>Sistema de Control de Almacenes e Inventarios</a>
 		</div>
  
-		<nav>
+		<nav class="vert">
 			<ul>
 				<li><a href="#"><span class="icon-house"></span>Inicio</a></li>
 				<li class="submenu">
@@ -69,20 +68,23 @@
 			<img src="<?php echo asset('img/nombre.png')?>">
 			</div>
 	</div>
-	<div class="banner">
+	<div class="menu_lat">
 		<div class="logo">
-			<div style="color: #fff; padding: 10px; font-size: 30px;">Menú</div>
-		
 		<header class="lat">
-		<nav>	<ul >
-				<li> <a href="#">Inicio</a> </li>
-				<li> <a href="libros.html">Libros de programación</a> </li>
-				<li> <a href="cursos.html">Cursos de programación</a> </li>
-				<li> <a href="humor.html">Humor informático</a> </li>
+			<div  class="menu_bar2" style="color: #fff; left: 12px; font-size: 20px;"><a href="#" class="bt-menu"><span class="icon-paragraph-left" style="color: #fff;"></span></a>
+		
+			</div>
+		
+		<nav class="lateral">	<ul>
+				<li> <a href="#">ALMACENES</a> </li>
+				<li> <a href="libros.html">USUARIOS</a> </li>
+				<li> <a href="cursos.html">SOLICITUDES</a> </li>
+				<li> <a href="humor.html">RESPUESTAS</a> </li>
+				<li> <a href="humor.html">CONSULTAS</a> </li>
 			</ul>
 			</nav>
-		</header>
 		</div>
+		</header>
 		<div class="formulario">
 			--formulario--
 		</div>

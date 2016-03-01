@@ -13,7 +13,9 @@ body {background:#000;}
 .menu_bar {
 	display:none;
 }
-
+.menu_bar2 {
+	display:none;
+}
 header {
 	width: 100%;
 }
@@ -93,13 +95,14 @@ header nav ul li .caret {
 	margin-right:0px;
 }
 header.lat {
-	width: 100%;
+	width: 180%;
+	position: relative;
 }
 header.lat nav {
 		width: 100%;
 		position: relative;
 		height: calc(100% - 80px);
-		
+	
 		margin: 0;
 		overflow: hidden;
 		padding: 0;
@@ -143,6 +146,11 @@ div.banner{
 	/*border:2px #933 solid;*/
 	
 }
+div.menu_lat{
+		padding-left: 10%;
+		padding-right: 5%;
+
+	}
 div.logo{
 	float: left;
 }
@@ -181,14 +189,42 @@ div.formulario{
 		font-weight: bold;
 		text-decoration: none;
 	}
+	.menu_bar .bt-menu:hover {
+		background: #089;
+	}
 
 	.menu_bar span {
 		float: right;
 		font-size: 40px;
 
 	}
+	.menu_bar2 {
+		display:block;
+		position: fixed;
+		top:20%;
+		background:#000;
 
-	header nav {
+	}
+
+	.menu_bar2 .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.menu_bar2 .bt-menu:hover {
+		background: #089;
+	}
+
+	.menu_bar2 span {
+		float: right;
+		font-size: 40px;
+
+	}
+	header nav.vert {
 		width: 50%;
 		position: fixed;
 		height: calc(100% - 80px);
@@ -198,50 +234,107 @@ div.formulario{
 		padding: 0;
 	}
 
-	header nav ul li {
+	header nav.vert ul li {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 		float: none;
 	}
 
-	header nav ul li a {
+	header nav.vert ul li a {
 		display: block;
 
 	}
 
 	
 
-	header nav ul li .children {
+	header nav.vert ul li .children {
 		width: 100%;
 		position: relative;
 	}
 
-	header nav ul li .children li a {
+	header nav.vert ul li .children li a {
 		margin-left:20px;
 	}
 
-	header nav ul .usuario {
+	header nav.vert ul .usuario {
 
 	
 	position: relative;
 	float: none;
 	}
-	header nav ul li .caret {
+	header nav.vert ul li .caret {
+		float: right;
+	}
+	header.lat {
+	width: 100%;
+	position: fixed;
+
+	}
+
+	header.lat nav.lateral {
+		width: 70%;
+		position: fixed;
+		height: calc(100% - 80px);
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+		padding: 0;
+	}
+
+	header.lat nav.lateral ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+		float: none;
+	}
+
+	header.lat nav.lateral ul li a {
+		display: block;
+
+	}
+
+	
+
+	header.lat nav.lateral ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header.lat nav.lateral ul li .children li a {
+		margin-left:20px;
+	}
+
+	header.lat nav.lateral ul .usuario {
+
+	
+	position: relative;
+	float: none;
+	}
+	header.lat nav.lateral ul li .caret {
 		float: right;
 	}
 	div.banner{
-		padding-left: 20%;
+		padding-left: 35%;
 		float: none;
 	}
-	div.logo{
-		float: inherit;
+	div.menu_lat{
+		padding-left: 0%;
+		float: none;
 	}
+
 	div.nombre{
 	display: none;
 	visibility: hidden;
 	  
+	}
+	div.formulario{
+	
+	width: 95%;  
 }
 	div img{
 		width: 80%;
 	}
+	header.lat {
+	width: 100%;
+}
+
 }
