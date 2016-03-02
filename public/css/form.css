@@ -1,0 +1,38 @@
+.fieldcuerpo legend{
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-image: -webkit-gradient(
+  linear,
+  right bottom,
+  left bottom,
+  color-stop(0.11, #008799),
+  color-stop(0.46, #008878)
+);
+background-image: -o-linear-gradient(left, #008799 11%, #008878 46%);
+background-image: -moz-linear-gradient(left, #008799 11%, #008878 46%);
+background-image: -webkit-linear-gradient(left, #008799 11%, #008878 46%);
+background-image: -ms-linear-gradient(left, #008799 11%, #008878 46%);
+background-image: linear-gradient(to left, #008799 11%, #008878 46%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb645', endColorstr='#f1e767', GradientType=1 );
+  border:1px solid #ccc;
+  width: 300px;
+  padding: 3px 6px 3px 6px;
+}
+.fieldcuerpo{
+  width: auto;
+  padding: 10px;
+  border:1px solid #999;
+  margin-top: 5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: #000;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

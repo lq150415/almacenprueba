@@ -35,16 +35,16 @@ function main () {
 			$('nav.lateral').animate({
 				left: '-100%'
 			});
-		
+	
 		}
 	
- if ((screen.width>=950) && ($contadores==1)) {
-				$('nav.lateral').animate({
-				left: '100%'
-			});
-		}
+ 
 });
 	// Mostramos y ocultamos submenus
-
+	if (($(window).width()>=950) && ($contadores==1)) {
+				$('nav.lateral').animate({
+				left: '0'
+			});
+		}
 	
 }

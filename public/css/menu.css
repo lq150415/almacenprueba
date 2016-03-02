@@ -163,7 +163,8 @@ div.formulario{
 	
 	float: right;
 	background: #fff;	
-	width: 70%;  
+	width: 70%; 
+	padding: 10px; 
 }
 @media screen and (max-width: 950px) {
 	body {
@@ -258,7 +259,6 @@ div.formulario{
 
 	header nav.vert ul .usuario {
 
-	
 	position: relative;
 	float: none;
 	}
@@ -274,8 +274,8 @@ div.formulario{
 	header.lat nav.lateral {
 		width: 70%;
 		position: fixed;
-		height: calc(100% - 80px);
-		right:100%;
+		height: calc(100% - 240px);
+		right:-100%;
 		margin: 0;
 		overflow: scroll;
 		padding: 0;
