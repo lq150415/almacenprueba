@@ -19,6 +19,15 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-Route::get('saludo', function(){
-    return view('layout');
+Route::get('almacen', function(){
+    return view('almacen');
+});
+Route::get('rubro', function(){
+    return view('rubro');
+});
+Route::get('producto', function(){
+    return view('producto');
+});
+Route::get('usuario', function(){
+    return view('usuario');
 });

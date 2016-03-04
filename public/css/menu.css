@@ -43,6 +43,7 @@ header nav ul .usuario {
 	
 	float: right;
 }
+
 header nav ul li:hover {
 	background:#089;
 }
@@ -95,7 +96,7 @@ header nav ul li .caret {
 	margin-right:0px;
 }
 header.lat {
-	width: 180%;
+	width: 160%;
 	position: relative;
 }
 header.lat nav {
@@ -118,12 +119,15 @@ header.lat nav {
 		display: block;
 
 	}
-
+header.lat nav.lateral ul li:hover .children {
+display: inline;
+}
 	
 
-	header.lat nav ul li .children {
+	header.lat nav.lateral ul li .children {
 		width: 100%;
 		position: relative;
+		zoom:0.8;
 	}
 
 	header.lat nav ul li .children li a {
@@ -149,9 +153,13 @@ div.banner{
 div.menu_lat{
 		padding-left: 10%;
 		padding-right: 5%;
+		overflow: hidden;
 
 	}
 div.logo{
+	float: left;
+}
+div.logo2{
 	float: left;
 }
 div.nombre{
@@ -164,7 +172,14 @@ div.formulario{
 	float: right;
 	background: #fff;	
 	width: 70%; 
-	padding: 10px; 
+	padding: 10px;
+	border-radius: 12px ; 
+	overflow: auto;
+}
+@media screen and (min-width: 950px) {
+ header.lat nav.lateral {
+ 	right: 0;
+ }
 }
 @media screen and (max-width: 950px) {
 	body {
@@ -183,7 +198,8 @@ div.formulario{
 
 	.menu_bar .bt-menu {
 		display: block;
-		padding: 20px;
+		padding: 20px 15px 20px 0px;
+		margin-left: 20%;
 		color: #fff;
 		overflow: hidden;
 		font-size: 25px;
@@ -196,13 +212,13 @@ div.formulario{
 
 	.menu_bar span {
 		float: right;
-		font-size: 40px;
+		font-size: 65px;
 
 	}
 	.menu_bar2 {
 		display:block;
 		position: fixed;
-		top:20%;
+		top:0;
 		background:#000;
 
 	}
@@ -229,14 +245,14 @@ div.formulario{
 		width: 50%;
 		position: fixed;
 		height: calc(100% - 80px);
-		right:100%;
-		margin: 0;
+		right:-100%;
+		margin-top: 20px;
 		overflow: scroll;
 		padding: 0;
 	}
 
 	header nav.vert ul li {
-		display: block;
+		display: inline-block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 		float: none;
 	}
@@ -274,8 +290,8 @@ div.formulario{
 	header.lat nav.lateral {
 		width: 70%;
 		position: fixed;
-		height: calc(100% - 240px);
-		right:-100%;
+		
+		right:100%;
 		margin: 0;
 		overflow: scroll;
 		padding: 0;
@@ -313,8 +329,8 @@ div.formulario{
 		float: right;
 	}
 	div.banner{
-		padding-left: 35%;
 		float: none;
+		display: none;
 	}
 	div.menu_lat{
 		padding-left: 0%;
@@ -338,3 +354,14 @@ div.formulario{
 }
 
 }
+@media screen and (max-width: 480px) {
+.menu_bar .bt-menu {
+		font-size: 18px;
+		margin-left: 30%;
+	}
+}
+@media screen and (max-width: 355px) {
+.menu_bar .bt-menu {
+		font-size: 15px;
+	}
+	}
