@@ -101,7 +101,7 @@ header.lat {
 }
 header.lat nav {
 		width: 100%;
-		position: relative;
+	
 		height: calc(100% - 80px);
 	
 		margin: 0;
@@ -184,7 +184,6 @@ div.formulario{
 @media screen and (max-width: 950px) {
 	body {
 		padding-top:80px;
-		
 	}
 
 	.menu_bar {
@@ -252,7 +251,7 @@ div.formulario{
 	}
 
 	header nav.vert ul li {
-		display: inline-block;
+		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 		float: none;
 	}
@@ -308,11 +307,10 @@ div.formulario{
 
 	}
 
-	
-
 	header.lat nav.lateral ul li .children {
 		width: 100%;
 		position: relative;
+		background:#087;
 	}
 
 	header.lat nav.lateral ul li .children li a {
@@ -353,6 +351,12 @@ div.formulario{
 	width: 100%;
 }
 
+#VentanaModal {
+	height: 300px;
+	width: 400px;
+	margin-top: -150px;
+	margin-left: -200px;
+}
 }
 @media screen and (max-width: 480px) {
 .menu_bar .bt-menu {
@@ -365,3 +369,28 @@ div.formulario{
 		font-size: 15px;
 	}
 	}
+
+#bgVentanaModal {
+	background-image: url(../img/bg-modal.png);
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+
+}
+#VentanaModal {
+	background-color: #CCC;
+	height: 70%;
+	width: 50%;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -15%;
+	margin-left: -25%;
+	padding: 10px;
+	overflow: auto
+}

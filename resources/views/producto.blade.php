@@ -1,10 +1,18 @@
 	@extends ('layout')
+	@section ('VM')
+		<div id="bgVentanaModal" class="bgventanaModal">
+<div id="VentanaModal" class="VentanaModal">
+<p><a href="javascript:despliegaModal('hidden');">Cerrar Ventana Modal</a></p>
+</div>
+</div>
+
+	@stop
 	@section ('contenido')
 		<fieldset class="fieldcuerpo" align="left">
 					<legend>PRODUCTOS</legend>
 	  	<div>
 
-	  	<a href="#">+ Nuevo producto</a>
+	  	<a href="javascript:despliegaModal('visible');">+ Nuevo producto</a>
 	  	</br>
 	  	</br>	  	
 	  	<span class="titulo">ID Rubro : </span><span  class="subtitulo"># rubro</span> 

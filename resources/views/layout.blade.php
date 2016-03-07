@@ -26,9 +26,15 @@
 				$('#example').DataTable();
 			} );
 		</script>
+<script type="text/javascript">
+function despliegaModal( _valor ){
+	document.getElementById("bgVentanaModal").style.visibility=_valor;
+	}
 
+</script>
 
 <body>
+@yield('VM')
 <div>
 	<header>
 		<div class="menu_bar">
@@ -49,7 +55,7 @@
 					<ul class="children">
 						<li><a href="#">Reporte General<span class="icon-dot"></span></a></li>
 						<li><a href="#">Reporte por Rubro<span class="icon-dot"></span></a></li>
-						<li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
+						<li><a href="#">Reporte de Usuarios<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
 				<li class="submenu">
@@ -60,8 +66,8 @@
 					<a href="#" ><span class="icon-user-minus"></span>Usuario<span class="caret icon-arrow-down6"></span></a>
 					<ul class="children">
 						<li><a href="#">Ver Perfil<span class="icon-dot"></span></a></li>
-						<li><a href="#">SubElemento #2 <span class="icon-dot"></span></a></li>
-						<li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
+						<li><a href="#">Editar Perfil<span class="icon-dot"></span></a></li>
+						<li><a href="#">Cerrar Sesión<span class="icon-dot"></span></a></li>
 					</ul>
 				</li>
 			</ul>
@@ -91,9 +97,9 @@
 					<li> <a href="respuesta">RESPUESTAS</a> </li>
 					<li> <a >CONSULTAS</a> 
 						<ul class="children">
-							<li><a href="#">Por rubro<span class="icon-dot"></span></a></li>
-							<li><a href="#">Por producto<span class="icon-dot"></span></a></li>
-							<li><a href="#">Por usuario<span class="icon-dot"></span></a></li>
+							<li><a href="consultapr">Por rubro<span class="icon-dot"></span></a></li>
+							<li><a href="consultapp">Por producto<span class="icon-dot"></span></a></li>
+							<li><a href="consultapu">Por usuario<span class="icon-dot"></span></a></li>
 							<li><a href="#">Por fecha de ingreso<span class="icon-dot"></span></a></li>
 							<li><a href="#">Por fecha de salida<span class="icon-dot"></span></a></li>
 							<li><a href="#">Por fecha de solicitud<span class="icon-dot"></span></a></li>

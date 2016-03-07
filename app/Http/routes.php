@@ -31,3 +31,12 @@ Route::get('producto', function(){
 Route::get('usuario', function(){
     return view('usuario');
 });
+Route::get('consultapr', function(){
+    return view('consultaporrubro');
+});
+Route::get('consultapp', function(){
+    return view('consultaporproducto');
+});
+Route::get('consultapu', function(){
+    return view('consultaporusuario');
+});
