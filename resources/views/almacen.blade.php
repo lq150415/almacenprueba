@@ -3,7 +3,32 @@
 	@section ('VM')
 		<div id="bgVentanaModal" class="bgventanaModal">
 <div id="VentanaModal" class="VentanaModal">
-<p><a href="javascript:despliegaModal('hidden');">Cerrar Ventana Modal</a></p>
+		<a href="javascript:despliegaModal('hidden');" title="Cerrar"><span class="icon-undo2" style="float: right; color: #000; font-size: 20px;"></span></a>
+		</br>
+		<fieldset class="fieldcuerpo" align="left">
+			<legend>REGISTRO DE NUEVO ALMACEN</legend>
+		<form class="formularioreg" method="POST" action="almacen/registrar">
+			 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+				<table style="margin-top: 4%;  margin-left: 10%;">
+						<tr style="height: 50px;">
+							<td width="130px" class="lblnombre">Nombre del almacen</td>
+							<td width="250px"><input type="text" name="nom_alm" class="txtcampo large" placeholder="NOMBRE DEL ALMACEN" onkeypress="return sololetras(event);" onpaste="return false" ></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td width="130px" class="lblnombre">Ubicación del almacen</td>
+							<td width="250px"><input type="text" name="ubi_alm" class="txtcampo large" placeholder="NOMBRE DEL ALMACEN" onkeypress="return sololetras(event);" onpaste="return false" ></td>
+						</tr>
+					</table>
+					<table style="margin-left: 30%;">
+						<tr style="height: 50px;">
+							<td>
+								<input type="submit" name="" class="botones ico-btnsave" value="REGISTRAR">
+                 				<input type="reset"  onclick="document.location.reload();" class="botones ico-btnlimpiar" value="LIMPIAR DATOS">
+                 			</td>
+						</tr>
+					</table>
+			</form>
+		</fieldset>
 </div>
 </div>
 
@@ -27,6 +52,21 @@
 			<th>ACCIONES</th>	
 		</tr>
 	</thead>
+	<tbody style="font-size:11px;">
+		<tr>
+		<?php
+
+					foreach ($almacenes as $almacen):
+					?>
+						<th><?php echo $almacen->id;?></th>
+						<th><?php echo $almacen->NOM_ALM;?></th>
+            			<th><?php echo $almacen->UBI_ALM;?></th>
+						<th><a href="">Ver</a><a href="·"> Modificar</a></th>	
+		</tr>
+				<?php	endforeach;
+			
+			?>
+	</tbody>
 	<tfoot style="font-size:13px;color:#FFF;background-color:#444444;height:40px;">
 		<tr>
 			<th>ID</th>
@@ -36,9 +76,8 @@
 			
 		</tr>
 	</tfoot>
-	<tbody style="font-size:11px;">
-		
-	</tbody>
+	
 </table>
+</div>
 </fieldset>
 	@stop
